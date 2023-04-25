@@ -7,26 +7,28 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class User{
-    private String name;
-    private String password;
-    boolean isOnline;
-    protected List<String> chatted = new ArrayList<>();
-    protected Map<String, List<Message>> messages = new HashMap<>();
-    public User(String name,String password){
-        this.name = name;
-        this.password = password;
-    }
+public class User {
 
-    public String getUsername(){
-        return name;
-    }
+  private String name;
+  private String password;
+  boolean isOnline;
+  protected List<String> chatted = new ArrayList<>();
+  protected Map<String, List<Message>> messages = new HashMap<>();
 
-    public List<String> getChatted(){
-        return chatted;
-    }
+  public User(String name, String password) {
+    this.name = name;
+    this.password = password;
+  }
 
-    public String getPassword(){
-        return password;
-    }
+  public String getUsername() {
+    return name;
+  }
+
+  public List<String> getChatted() {
+    return chatted;
+  }
+
+  public String getPassword() {
+    return password;
+  }
 }
